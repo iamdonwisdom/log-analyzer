@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SOC Dashboard</title>
+</head>
+<body>
+
+<h1>🛡️ SOC Log Dashboard</h1>
+
+<p><b>Total Failed Logins:</b> {{ data.failed_count }}</p>
+
+<h2>Top IPs</h2>
+<ul>
+{% for ip, count in data.top_ips %}
+    <li>{{ ip }} - {{ count }} events</li>
+{% endfor %}
+</ul>
+
+<h2>⚠️ Suspicious IPs</h2>
+<ul>
+{% for ip, count in data.suspicious %}
+    <li>{{ ip }} - {{ count }} failed attempts</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
