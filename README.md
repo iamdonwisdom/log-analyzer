@@ -2,8 +2,9 @@
 
 ## Overview
 A Python-based log analysis tool that detects suspicious login activity and potential brute-force attacks from system logs.
-
-## Features
+ Security log analysis tool for detecting suspicious activity and authentication anomalies.
+ 
+ ##features
 - Failed login detection
 - Brute-force attack identification
 - Top IP analysis
